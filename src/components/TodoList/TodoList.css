@@ -1,0 +1,73 @@
+.todo-app {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 36px 16px;
+}
+
+.todo-card {
+  width: min(100%, 620px);
+  padding: 32px;
+  border: 1px solid #e6eaf2;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 20px 55px rgb(34 48 78 / 10%);
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.todo-eyebrow {
+  margin: 0 0 6px;
+  color: #68748a;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.todo-header h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  letter-spacing: -0.04em;
+}
+
+.todo-total {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 15px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.todo-summary {
+  margin: 12px 0 24px;
+  color: #68748a;
+  font-size: 0.92rem;
+}
+
+.todo-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.todo-empty {
+  margin: 0;
+  padding: 24px 12px;
+  color: #7b8495;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .todo-card {
+    padding: 24px 20px;
+  }
+}
